@@ -1,0 +1,34 @@
+<% goalkeepers = [] %>
+<% rightbacks = [] %>
+<% centrebacks = [] %>
+<% leftbacks = [] %>
+<% midfielders = [] %>
+<% strikers = [] %>
+
+<% @gks.each do |gk| goalkeepers << gk %>
+<%= gk.name %>
+<% end %>
+<% @rbs.each do |rb| rightbacks << rb %>
+<%= rb.name %>
+<% end %>
+<% @cbs.each do |cb| centrebacks << cb %>
+<%= cb.name %>
+<% end %>
+<% @lbs.each do |lb| leftbacks << lb %>
+<%= lb.name %>
+<% end %>
+<% @mfs.each do |mf| midfielders << mf%>
+<%= mf.name %>
+<% end %>
+<% @sts.each do |st| strikers << st%>
+<%= st.name %>
+<% end %>
+
+<%= select_tag 'name', options_for_select(@gks.each{ |gk| gk.name }) %>
+<%= select_tag 'name', options_for_select(@rbs.each{ |rb| rb.name }) %>
+<%= select_tag 'name', options_for_select(@cbs.each{ |cb| cb.name }) %>
+<%= select_tag 'name', options_for_select(@lbs.each{ |lb| lb.name }) %>
+<%= select_tag 'name', options_for_select(@mfs.each{ |mf| mf.name }) %>
+<%= select_tag 'name', options_for_select(@sts.each{ |st| st.name }) %>
+
+

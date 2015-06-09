@@ -3,31 +3,26 @@
 <% @groupA.each do |group| %>
   <li class="group-li"><%= link_to(group.name, group_path(group.id), class: 'group-link')%></li>
 <% end %>
-<br>
 <table>
-    <tr>
-        <th>Team</th>
-        <th>Pld</th>
-        <th>W</th>
-        <th>D</th>
-        <th>L</th>
-        <th>GF</th>
-        <th>GA</th>
-        <th>GD</th>
-        <th>PTS</th>
-    </tr>
-    <% @groupA.first.teams.each do |team| %>
-    <tr>
-      <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + team.code + '.png' %><%= team.name %></td>
-      <td><%= team.played %></td>
-      <td><%= team.wins %></td>
-      <td><%= team.draws %></td>
-      <td><%= team.losses %></td>
-      <td><%= team.points %></td>
-    <% end  %>
-    </tr>
+  <tr>
+    <th>Team</th>
+    <th>Pld</th>
+    <th>W</th>
+    <th>D</th>
+    <th>L</th>
+    <th>PTS</th>
+  </tr>
+  <% @groupA.first.teams.each do |team| %>
+  <tr>
+    <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + team.code + '.png' %><%= team.name %></td>
+    <td><%= team.played %></td>
+    <td><%= team.wins %></td>
+    <td><%= team.draws %></td>
+    <td><%= team.losses %></td>
+    <td><%= team.points %></td>
+  <% end  %>
+  </tr>
 </table>
-<br>
 <tbody>
   <p>
     <tr>
@@ -88,11 +83,9 @@
   </p>
   <p><input type="submit" id="groupA" value="Update Table"></p>
 </tbody>
-<br>
 <% @groupB.each do |group| %>
   <li class="group-li"><%= link_to(group.name, group_path(group.id), class: 'group-link')%></li>
 <% end %>
-<br>
 <table>
     <tr>
       <th>Team</th>
@@ -113,7 +106,6 @@
     <% end  %>
     </tr>
 </table>
-<br>
 <tbody>
   <p>
     <tr>

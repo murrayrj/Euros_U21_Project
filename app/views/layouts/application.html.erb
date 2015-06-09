@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <header>
+    <nav>
+      <li><%= link_to('Home', root_path) %></li>
+      <li><%= link_to('Predictor', group_predictor_path) %></li>
+      <li><%= link_to('Teams', team_index_path) %></li>
+      <% Group.all.each do |group| %>
+      <li><%= link_to(group.name, group_path(group.id))%></li>
+      <% end %>
+    </nav>
+  </header>
 <%= yield %>
-
 </body>
 </html>
