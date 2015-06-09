@@ -2,6 +2,6 @@
 
 <ul>
 <% @group.teams.each do |team| %>
-  <li><%= image_tag 'http://img.uefa.com/imgml/flags/32x32/' + team.code + '.png' %>  <%= link_to(team.name, team_path(team.id)) %></li>
+  <li><%= image_tag 'http://img.uefa.com/imgml/flags/70x70/' + team.code + '.png' %>  <%= link_to(team.name, team_path(team.id)) %></li>
 <% end %>
 </ul>
