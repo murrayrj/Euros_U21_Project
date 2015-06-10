@@ -5,11 +5,12 @@ Rails.application.routes.draw do
 
   get 'group/:id', to: 'group#show', as: :group
 
+  resources :players
   # get 'tables' => 'group#view'
   resources :team
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  root 'group#home'
+  root 'team#new'
   # You can have the root of your site routed with "root"
   # root 'group#index'
   # Example of regular route:
