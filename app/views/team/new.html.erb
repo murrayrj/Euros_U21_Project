@@ -1,34 +1,52 @@
+<h1>Create your own Fantasy U21 Football Team!</h1>
+
 <% goalkeepers = [] %>
 <% rightbacks = [] %>
-<% centrebacks = [] %>
+<% centerbacks = [] %>
 <% leftbacks = [] %>
-<% midfielders = [] %>
+<% centralmids = [] %>
+<% widemids = [] %>
 <% strikers = [] %>
 
-<% @gks.each do |gk| goalkeepers << gk %>
-<%= gk.name %>
+<% @gks.each do |gk|%>
+<% goalkeepers << gk.name %>
 <% end %>
-<% @rbs.each do |rb| rightbacks << rb %>
-<%= rb.name %>
+<% @rbs.each do |rb|%>
+<% rightbacks << rb.name %>
 <% end %>
-<% @cbs.each do |cb| centrebacks << cb %>
-<%= cb.name %>
+<% @cbs.each do |cb|%>
+<% centerbacks << cb.name %>
 <% end %>
-<% @lbs.each do |lb| leftbacks << lb %>
-<%= lb.name %>
+<% @lbs.each do |lb|%>
+<% leftbacks << lb.name %>
 <% end %>
-<% @mfs.each do |mf| midfielders << mf%>
-<%= mf.name %>
+<% @cms.each do |cm|%>
+<% centralmids << cm.name %>
 <% end %>
-<% @sts.each do |st| strikers << st%>
-<%= st.name %>
+<% @wms.each do |wm|%>
+<% widemids << wm.name %>
+<% end %>
+<% @sts.each do |st|%>
+<% strikers << st.name %>
 <% end %>
 
-<%= select_tag 'name', options_for_select(@gks.each{ |gk| gk.name }) %>
-<%= select_tag 'name', options_for_select(@rbs.each{ |rb| rb.name }) %>
-<%= select_tag 'name', options_for_select(@cbs.each{ |cb| cb.name }) %>
-<%= select_tag 'name', options_for_select(@lbs.each{ |lb| lb.name }) %>
-<%= select_tag 'name', options_for_select(@mfs.each{ |mf| mf.name }) %>
-<%= select_tag 'name', options_for_select(@sts.each{ |st| st.name }) %>
+<h3>Goalkeeper</h3>
+<p><%= select_tag 'name', options_for_select(goalkeepers)  %></p>
+<h3>Right-Back</h3>
+<p><%= select_tag 'name', options_for_select(rightbacks) %></p>
+<h3>Center-Backs</h3>
+<p><%= select_tag 'name', options_for_select(centerbacks) %>
+<%= select_tag 'name', options_for_select(centerbacks) %></p>
+<h3>Left-Back</h3>
+<p><%= select_tag 'name', options_for_select(leftbacks) %></p>
+<h3>Midfielders</h3>
+<p><%= select_tag 'name', options_for_select(widemids) %>
+<%= select_tag 'name', options_for_select(centralmids) %>
+<%= select_tag 'name', options_for_select(centralmids) %>
+<%= select_tag 'name', options_for_select(widemids) %></p>
+<h3>Strikers</h3>
+<p><%= select_tag 'name', options_for_select(strikers) %>
+<%= select_tag 'name', options_for_select(strikers) %></p>
+
 
 

@@ -28,8 +28,8 @@
     <tr>
       <td class='homeA1'><%= @CZE.name %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @CZE.code + '.png' %></td>
-      <td><%= text_field_tag 'homeA1', nil, size: 4 %></td>
-      <td><%= text_field_tag 'awayA1', nil, size: 4 %></td>
+      <td><%= select_tag "homeA1", options_for_select((0..5).step(1))%></td>
+      <td><%= select_tag "awayA1", options_for_select((0..5).step(1)) %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @DEN.code + '.png' %></td>
       <td class='awayA1'><%= @DEN.name %></td>
     </tr>
@@ -37,8 +37,8 @@
     <tr>
       <td class='homeA2'><%= @GER.name %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @GER.code + '.png' %></td>
-      <td><%= text_field_tag 'homeA2', nil, size: 4 %></td>
-      <td><%= text_field_tag 'awayA2', nil, size: 4 %></td>
+      <td><%= select_tag "homeA2", options_for_select((0..5).step(1)) %></td>
+      <td><%= select_tag "awayA2", options_for_select((0..5).step(1)) %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @SRB.code + '.png' %></td>
       <td class='awayA2'><%= @SRB.name %></td>
     </tr>
@@ -47,8 +47,8 @@
     <tr>
       <td class='homeA3'><%= @SRB.name %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @SRB.code + '.png' %></td>
-      <td><%= text_field_tag 'homeA3', nil, size: 4 %></td>
-      <td><%= text_field_tag 'awayA3', nil, size: 4 %></td>
+      <td><%= select_tag "homeA3", options_for_select((0..5).step(1)) %></td>
+      <td><%= select_tag "awayA3", options_for_select((0..5).step(1)) %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @CZE.code + '.png' %></td>
       <td class='awayA3'><%= @CZE.name %></td>
     </tr>
@@ -56,8 +56,8 @@
     <tr>
       <td class='homeA4'><%= @GER.name %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @GER.code + '.png' %></td>
-      <td><%= text_field_tag 'homeA4', nil, size: 4 %></td>
-      <td><%= text_field_tag 'awayA4', nil, size: 4 %></td>
+      <td><%= select_tag "homeA4", options_for_select((0..5).step(1)) %></td>
+      <td><%= select_tag "awayA4", options_for_select((0..5).step(1)) %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @DEN.code + '.png' %></td>
       <td class='awayA4'><%= @DEN.name %></td>
     </tr>
@@ -66,8 +66,8 @@
     <tr>
       <td class='homeA5'><%= @CZE.name %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @CZE.code + '.png' %></td>
-      <td><%= text_field_tag 'homeA5', nil, size: 4 %></td>
-      <td><%= text_field_tag 'awayA5', nil, size: 4 %></td>
+      <td><%= select_tag "homeA5", options_for_select((0..5).step(1)) %></td>
+      <td><%= select_tag "awayA5", options_for_select((0..5).step(1)) %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @GER.code + '.png' %></td>
       <td class='awayA5'><%= @GER.name %></td>
     </tr>
@@ -75,8 +75,8 @@
     <tr>
       <td class='homeA6'><%= @DEN.name %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @DEN.code + '.png' %></td>
-      <td><%= text_field_tag 'homeA6', nil, size: 4 %></td>
-      <td><%= text_field_tag 'awayA6', nil, size: 4 %></td>
+      <td><%= select_tag "homeA6", options_for_select((0..5).step(1)) %></td>
+      <td><%= select_tag "awayA6", options_for_select((0..5).step(1)) %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @SRB.code + '.png' %></td>
       <td class='awayA6'><%= @SRB.name %></td>
     </tr>
@@ -111,8 +111,8 @@
     <tr>
       <td class='homeB1'><%= @ITA.name %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @ITA.code + '.png' %></td>
-      <td><%= text_field_tag 'homeB1', nil, size: 4 %></td>
-      <td><%= text_field_tag 'awayB1', nil, size: 4 %></td>
+      <td><%= select_tag "homeB1", options_for_select((0..5).step(1)) %></td>
+      <td><%= select_tag "awayB1", options_for_select((0..5).step(1)) %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @SWE.code + '.png' %></td>
       <td class='awayB1'><%= @SWE.name %></td>
     </tr>
@@ -120,8 +120,8 @@
     <tr>
       <td class='homeB2'><%= @ENG.name %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @ENG.code + '.png' %></td>
-      <td><%= text_field_tag 'homeB2', nil, size: 4 %></td>
-      <td><%= text_field_tag 'awayB2', nil, size: 4 %></td>
+      <td><%= select_tag "homeB2", options_for_select((0..5).step(1)) %></td>
+      <td><%= select_tag "awayB2", options_for_select((0..5).step(1)) %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @POR.code + '.png' %></td>
       <td class='awayB2'><%= @POR.name %></td>
     </tr>
@@ -130,8 +130,8 @@
     <tr>
       <td class='homeB3'><%= @SWE.name %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @SWE.code + '.png' %></td>
-      <td><%= text_field_tag 'homeB3', nil, size: 4 %></td>
-      <td><%= text_field_tag 'awayB3', nil, size: 4 %></td>
+      <td><%= select_tag "homeB3", options_for_select((0..5).step(1)) %></td>
+      <td><%= select_tag "awayB3", options_for_select((0..5).step(1)) %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @ENG.code + '.png' %></td>
       <td class='awayB3'><%= @ENG.name %></td>
     </tr>
@@ -139,8 +139,8 @@
     <tr>
       <td class='homeB4'><%= @ITA.name %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @ITA.code + '.png' %></td>
-      <td><%= text_field_tag 'homeB4', nil, size: 4 %></td>
-      <td><%= text_field_tag 'awayB4', nil, size: 4 %></td>
+      <td><%= select_tag "homeB4", options_for_select((0..5).step(1)) %></td>
+      <td><%= select_tag "awayB4", options_for_select((0..5).step(1)) %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @POR.code + '.png' %></td>
       <td class='awayB4'><%= @POR.name %></td>
     </tr>
@@ -149,8 +149,8 @@
     <tr>
       <td class='homeB5'><%= @ENG.name %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @ENG.code + '.png' %></td>
-      <td><%= text_field_tag 'homeB5', nil, size: 4 %></td>
-      <td><%= text_field_tag 'awayB5', nil, size: 4 %></td>
+      <td><%= select_tag "homeB5", options_for_select((0..5).step(1)) %></td>
+      <td><%= select_tag "awayB5", options_for_select((0..5).step(1)) %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @ITA.code + '.png' %></td>
       <td class='awayB5'><%= @ITA.name %></td>
     </tr>
@@ -158,8 +158,8 @@
     <tr>
       <td class='homeB6'><%= @POR.name %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @POR.code + '.png' %></td>
-      <td><%= text_field_tag 'homeB6', nil, size: 4 %></td>
-      <td><%= text_field_tag 'awayB6', nil, size: 4 %></td>
+      <td><%= select_tag "homeB6", options_for_select((0..5).step(1)) %></td>
+      <td><%= select_tag "awayB6", options_for_select((0..5).step(1)) %></td>
       <td><%= image_tag 'http://img.uefa.com/imgml/flags/18x18/' + @SWE.code + '.png' %></td>
       <td class='awayB6'><%= @SWE.name %></td>
     </tr>

@@ -15,6 +15,7 @@
       <% Group.all.each do |group| %>
       <li><%= link_to(group.name, group_path(group.id))%></li>
       <% end %>
+      <li><%= link_to('Fantasy Football', new_team_path) %></li>
     </nav>
   </header>
 <%= yield %>

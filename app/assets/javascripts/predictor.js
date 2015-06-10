@@ -13,13 +13,14 @@ $(document).ready(function() {
        10: $("#awayA5").val(),
        11: $("#homeA6").val(),
        12: $("#awayA6").val()
-    };    
+    };
     $.ajax({
       url: "/group/index",
-      method: "PUT",
+      method: "GET",
       data: data,
     }).done(function(data) {
       console.log(data)
+      conosole.log('hello moto')
     })
   });
   
@@ -37,13 +38,24 @@ $(document).ready(function() {
        10: $("#awayB5").val(),
        11: $("#homeB6").val(),
        12: $("#awayB6").val()
-    };    
+    };   
     $.ajax({
       url: "/group/index",
-      method: "PUT",
+      method: "GET",
       data: data,
     }).done(function(data) {
       console.log(data)
     })
   });
 })
+// document.addEventListener('DOMContentLoaded', function() {
+//   console.log('HELLO WORLD');
+
+//   getRegionsButton = $('#get-regions');
+//   regionSelect = $('#region-select');
+//   countrySelect = $('#country-select');
+//   results = $('#results');
+
+//   getRegionsButton.on('click', getRegions);
+//   regionSelect.on('change', getCountries);
+//   countrySelect.on('change', getCountryData);
