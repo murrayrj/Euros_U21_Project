@@ -1,13 +1,13 @@
 <h1>Create Your Own European Under-21 Football Team</h1>
 <h2>Find out about your favourite players and add them to your team!</h2>
 
-<% goalkeepers = [] %>
-<% rightbacks = [] %>
-<% centerbacks = [] %>
-<% leftbacks = [] %>
-<% centralmids = [] %>
-<% widemids = [] %>
-<% strikers = [] %>
+<% goalkeepers = ["Goalkeeper"] %>
+<% rightbacks = ["Right-Back"] %>
+<% centerbacks = ["Centre-back"] %>
+<% leftbacks = ["Left-Back"] %>
+<% centralmids = ["Central midfielders"] %>
+<% widemids = ["Wide midfielders"] %>
+<% strikers = ["Strikers"] %>
 
 <% @gks.each do |gk|%>
 <% goalkeepers << gk.name + ' (' + gk[:id].to_s + ')'%>
@@ -32,7 +32,7 @@
 <% end %>
 
 <h3>Goalkeeper</h3>
-<p><%= select_tag 'gk', options_for_select(goalkeepers)  %></p>
+<p><%= select_tag 'gk', options_for_select(goalkeepers)%></p>
 <h3>Defenders</h3>
 <p><%= select_tag 'rb', options_for_select(rightbacks) %>
 <%= select_tag 'rcb', options_for_select(centerbacks) %>
@@ -46,5 +46,6 @@
 <h3>Strikers</h3>
 <p><%= select_tag 'rs', options_for_select(strikers) %>
 <%= select_tag 'ls', options_for_select(strikers) %></p>
+<%= button_tag(type: 'button', id: 'teamSubmit') do content_tag(:strong, 'Submit Team') end %>
 
 <div id="info"></div>
