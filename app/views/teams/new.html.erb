@@ -1,6 +1,3 @@
-<h1>Create Your Own European Under-21 Football Team</h1>
-<h2>Find out about your favourite players and add them to your team!</h2>
-
 <% goalkeepers = ["Goalkeeper"] %>
 <% rightbacks = ["Right-Back"] %>
 <% centerbacks = ["Centre-back"] %>
@@ -31,21 +28,26 @@
 <% strikers << st.name + ' (' + st[:id].to_s  + ')'%>
 <% end %>
 
-<h3>Goalkeeper</h3>
-<p><%= select_tag 'gk', options_for_select(goalkeepers)%></p>
-<h3>Defenders</h3>
-<p><%= select_tag 'rb', options_for_select(rightbacks) %>
-<%= select_tag 'rcb', options_for_select(centerbacks) %>
-<%= select_tag 'lcb', options_for_select(centerbacks) %>
-<%= select_tag 'lb', options_for_select(leftbacks) %></p>
-<h3>Midfielders</h3>
-<p><%= select_tag 'rm', options_for_select(widemids) %>
-<%= select_tag 'rcm', options_for_select(centralmids) %>
-<%= select_tag 'lcm', options_for_select(centralmids) %>
-<%= select_tag 'lm', options_for_select(widemids) %></p>
-<h3>Strikers</h3>
-<p><%= select_tag 'rs', options_for_select(strikers) %>
-<%= select_tag 'ls', options_for_select(strikers) %></p>
-<%= button_tag(type: 'button', id: 'teamSubmit') do content_tag(:strong, 'Submit Team') end %>
+<div class="pitch">
+  <h1>Create Your Own European Under-21 Football Team</h1>
+  <h2>Find out about your favourite players and add them to your team!</h2>
+  <h3>Goalkeeper</h3>
+  <p><%= select_tag 'gk', options_for_select(goalkeepers)%></p>
+  <h3>Defenders</h3>
+    <p><%= select_tag 'rb', options_for_select(rightbacks) %>
+    <%= select_tag 'rcb', options_for_select(centerbacks) %>
+    <%= select_tag 'lcb', options_for_select(centerbacks) %>
+    <%= select_tag 'lb', options_for_select(leftbacks) %></p>
+  <h3>Midfielders</h3>
+    <p><%= select_tag 'rm', options_for_select(widemids) %>
+    <%= select_tag 'rcm', options_for_select(centralmids) %>
+    <%= select_tag 'lcm', options_for_select(centralmids) %>
+    <%= select_tag 'lm', options_for_select(widemids) %></p>
+  <h3>Strikers</h3>
+    <p><%= select_tag 'rs', options_for_select(strikers) %>
+    <%= select_tag 'ls', options_for_select(strikers) %></p>
+  <%= button_tag(type: 'button', id: 'teamSubmit') do content_tag(:strong, 'Submit Team') end %>
+</div>
+<div id="info">
+</div>
 
-<div id="info"></div>

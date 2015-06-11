@@ -1,0 +1,46 @@
+.nav li
+{
+    font-size: 27px;
+    display: inline-block;
+    background-color: #383747;
+}
+html
+{
+    background: #f7f6f6 url('background.png') repeat;
+}
+body
+{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.nav a:link,
+a:visited
+{
+    font-weight: bold;
+    padding: 24px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #383747;
+}
+.nav a:hover,
+a:active
+{
+    background-color: #7a991a;
+    text-decoration: none;
+    border-radius: 30px;
+}
+.container { 
+  margin-left: 100px;
+  width: 1000px; 
+  height: 76px;
+}
+.logo { 
+  float: left; 
+}
+.nav { 
+  float: right; 
+}
+.container{
+  background-color: #383747;
+}

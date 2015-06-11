@@ -6,17 +6,19 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
+<div class="container">
+  <%= image_tag("logo.png", height: '76', width: '76', class: "logo") %>
+  <ul class="nav">
+    <li><%= link_to('Home', root_path) %></li>
+    <li><%= link_to('Teams', teams_path) %></li>
+    <li><%= link_to('Predictor', group_predictor_path) %></li>
+    <% Group.all.each do |group| %>
+    <li><%= link_to(group.name, group_path(group.id))%></li>
+    <% end %>
+  </ul>
+  <div style="clear: both"></div>
+</div>
 <body>
-  <header>
-    <nav class="navbar">
-      <li><%= link_to('Home', root_path) %></li>
-      <li><%= link_to('Teams', teams_path) %></li>
-      <li><%= link_to('Predictor', group_predictor_path) %></li>
-      <% Group.all.each do |group| %>
-      <li><%= link_to(group.name, group_path(group.id))%></li>
-      <% end %>
-    </nav>
-  </header>
 <%= yield %>
 </body>
 </html>
