@@ -1,0 +1,16 @@
+
+div.columns
+{
+    width: 800px;
+    margin-left: 350px;
+}
+
+div.columns div
+{
+    float: left; 
+    width: 400px;
+    height: 100px;
+}
+div.columns div ul li {
+  font-size: 20px;
+}

@@ -21,7 +21,7 @@
   font-size: 32px;
 }
 #group .group-li a {
-  text-decoration: none;
+  
   color: black;
 }
 #group ul {
@@ -39,4 +39,7 @@
 .stage td {
   padding-left: 21px;
   padding-bottom: 8px;
+}
+a {
+  text-decoration: none;
 }

@@ -1,21 +1,19 @@
 <h1><%= @team.name %></h1>
 <h2>Players</h2>
 <div class="columns">
-  <div>
-  </div>
   <% @team.players.each do |player| %>
   <div>
     <ul>
-      <li><%= player.name %></li>
-      <li>Club: <%= player.club %></li>
-      <li>Nation: <%= player.nation  %></li>
+      <li><strong><%= player.name %></strong></li>
+      <li>Club: <strong><%= player.club %></strong></li>
+      <li>Nation: <strong><%= player.nation  %></strong></li>
     </ul>    
   </div>
   <div>
     <ul>
-      <li>Postion: <%= player.position %></li>
-      <li>Age: <%= player.age %></li>
-      <li>Height: <%= player.height %>m</li>
+      <li>Postion: <strong><%= player.position %></strong></li>
+      <li>Age: <strong><%= player.age %></strong></li>
+      <li>Height: <strong><%= player.height %>m</strong></li>
     </ul>
   </div>
   <%end %>

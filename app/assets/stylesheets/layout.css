@@ -16,7 +16,7 @@ body
 a:visited
 {
     font-weight: bold;
-    padding: 24px;
+    padding: 27px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -28,7 +28,7 @@ a:active
 {
     text-decoration: none;
     border-radius: 30px;
-    background-color: #7a991a;
+    background-color: #539DC2;
 }
 .container
 {
@@ -83,8 +83,11 @@ h3
 }
 .teamlist li {
   font-size: 24px;
-  padding-bottom: 25px
+  padding-bottom: 25px;
 }
 h1 {
   text-align: center;
+}
+.teamlist li a {
+    color: black;
 }
