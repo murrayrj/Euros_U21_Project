@@ -12,12 +12,12 @@ function getPlayerInfo(){
         if (data[i].id == id){
           var player = data[i];
           $('#info').empty()
-          $('#info').append('<h2>Player Information</h2>')
-          $('#info').append('<li> Name: ' + player.name + '</li>')
-          $('#info').append('<li> Club: ' + player.club + '</li>')
-          $('#info').append('<li> Nation: ' + player.nation + '</li>')
-          $('#info').append('<li> Age: ' + player.age + '</li>')
-          $('#info').append('<li> Height: ' + player.height + 'm </li>')
+          $('#info').append('<h2>Player Info</h2>')
+          $('#info').append('<li> Name:<strong> ' + player.name + '</strong></li>')
+          $('#info').append('<li> Club:<strong> ' + player.club + '</strong></li>')
+          $('#info').append('<li> Nation:<strong> ' + player.nation + '</strong></li>')
+          $('#info').append('<li> Age:<strong> ' + player.age + '</strong></li>')
+          $('#info').append('<li> Height:<strong> ' + player.height + 'm </strong></li>')
         }
       }
     }

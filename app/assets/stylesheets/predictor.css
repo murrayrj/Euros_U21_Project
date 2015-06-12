@@ -1,0 +1,41 @@
+.match{
+  text-align: center;
+}
+.home, .away {
+  padding: 17px;
+}
+#home, #away {
+  padding-right: 20px;
+}
+.Amatch {
+  margin-left: 29%;
+}
+.Bmatch {
+  margin-left: 33%;
+}
+#groupB, #groupA{
+  margin-left: 43%;
+}
+#group {
+  margin-left: 40%;
+  font-size: 32px;
+}
+#group .group-li a {
+  text-decoration: none;
+  color: black;
+}
+#group ul {
+  list-style-type: none;
+}
+.predictor {
+  margin-left: 41.2%;
+  font-size: 39px;
+}
+.stage {
+  margin-left: 35%;
+  vertical-align: center
+}
+.stage td {
+  padding-left: 21px;
+  padding-bottom: 8px;
+}

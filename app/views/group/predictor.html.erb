@@ -1,13 +1,15 @@
-<h1>Predictor</h1>
-<ul>
+<h1 class="predictor">Predictor</h1>
+<div id="group">
+  <ul>
   <% @groupA.each do |group| %>
     <li class="group-li">
-      <%= link_to(group.name, group_path(group.id), class: 'group-link')%>
+    <%= link_to(group.name, group_path(group.id), class: 'group-link')%>
     </li>
-  <% end %>
-</ul>
+    <% end %>
+  </ul>
+</div>
 
-<table>
+<table class="stage">
   <tr>
     <th>Team</th>
     <th>Pld</th>
@@ -32,7 +34,7 @@
 <% team3 = @groupA.first.teams[2] %>
 <% team4 = @groupA.first.teams[3] %>
 <hr>
-<table>
+<table class= "Amatch">
   <tbody>
     <tr class="match">
       <td class='home'><%= team1.name %></td>
@@ -90,17 +92,20 @@
     </tr>  
   </tbody>
 </table>
+<hr>
 <input type="submit" id="groupA" value="Update Table">
 
-<ul>
-  <% @groupB.each do |group| %>
+<div id="group">
+  <ul>
+    <% @groupB.each do |group| %>
     <li class="group-li">
-      <%= link_to(group.name, group_path(group.id), class: 'group-link')%>
+    <%= link_to(group.name, group_path(group.id), class: 'group-link')%>
     </li>
-  <% end %>
-</ul>
+    <% end %>
+  </ul>
+</div>
 
-<table>
+<table class="stage">
   <tr>
     <th>Team</th>
     <th>Pld</th>
@@ -126,7 +131,7 @@
 <% team3 = @groupB.first.teams[2] %>
 <% team4 = @groupB.first.teams[3] %>
 <hr>
-<table>
+<table class="Bmatch">
   <tbody>
     <tr class="match">
       <td class='home'><%= team1.name %></td>
@@ -184,4 +189,5 @@
     </tr>  
   </tbody>
 </table>
+<hr>
 <input type="submit" id="groupB" value="Update Table">

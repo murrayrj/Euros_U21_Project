@@ -26,21 +26,53 @@ a:visited
 .nav a:hover,
 a:active
 {
-    background-color: #7a991a;
     text-decoration: none;
     border-radius: 30px;
+    background-color: #7a991a;
 }
-.container { 
-  margin-left: 100px;
-  width: 1000px; 
-  height: 76px;
+.container
+{
+    width: 1000px;
+    height: 76px;
+    margin-left: 115px;
 }
-.logo { 
-  float: left; 
+.logo
+{
+    float: left;
 }
-.nav { 
-  float: right; 
+.nav
+{
+    float: right;
 }
-.container{
-  background-color: #383747;
+.container
+{
+    background-color: #383747;
+}
+#info li,
+.chooseteam h1,
+h2,
+h3
+{
+    list-style-type: none;
+    text-align: center;
+}
+#gk
+{
+    margin-left: 43%;
+}
+.defenders
+{
+    margin-left: 20.5%;
+}
+.midfielders
+{
+    margin-left: 17%;
+}
+.strikers
+{
+    margin-left: 37%;
+}
+#teamSubmit
+{
+    margin-left: 45.5%;
 }
