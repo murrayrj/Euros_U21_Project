@@ -28,8 +28,9 @@
   list-style-type: none;
 }
 .predictor {
-  margin-left: 41.2%;
+  margin-left: 41.5%;
   font-size: 39px;
+  text-align: left;
 }
 .stage {
   margin-left: 35%;
